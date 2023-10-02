@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de Camiseta</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header class="container-fluid bg-dark top-0">
+        <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                    Tienda
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                    Carrito
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled"
+                    type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>
+                    Disabled
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active container" id="pills-home" role="tabpanel"
+                aria-labelledby="pills-home-tab" tabindex="0">
+                <h2 class="h4 m-4 text-primary">Productos</h2>
+                <div class="row row-cols-sm-1 row row-cols-md-2 row row-cols-lg-3 row row-cols-xl-4">
+
+                    <div class="col d-flex justify-content-center-mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <img src="./recursos/boca.titular.jpeg" class="card-img-top" alt="Camiseta Boca Juniors">
+                            <div class="card-body">
+                                <h5 class="card-title pt-2 text-center text-white">Boca Junior</h5>
+                                <p class="card-text text-white description">Camiseta Boca Junior Titular Temporada 2023</p>
+                                <h5 class="text-white">Precio: <span class="price">$3150</span></h5>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary button">Añadir al Carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center-mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <img src="./recursos/boca.suplente.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title pt-2 text-center text-white">Boca Junior</h5>
+                                <p class="card-text text-white description">Camiseta Boca Junior Suplente Temporada 2023</p>
+                                <h5 class="text-white">Precio: <span class="price">$2850</span></h5>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary button">Añadir al Carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center-mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <img src="./recursos/river.titular.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title pt-2 text-center text-white">River Plate</h5>
+                                <p class="card-text text-white description">Camiseta River Plate Titular Temporada 2023</p>
+                                <h5 class="text-white">Precio: <span class="price">$2900</span></h5>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary button">Añadir al Carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center-mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <img src="./recursos/rosario.titular.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title pt-2 text-center text-white">Rosario Central</h5>
+                                <p class="card-text text-white description">Camiseta Rosario Central Titular Temporada 2023</p>
+                                <h5 class="text-white">Precio: <span class="price">$1550</span></h5>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary button">Añadir al Carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center-mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <img src="./recursos/newells.titular.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title pt-2 text-center text-white">Newells Old Boys</h5>
+                                <p class="card-text text-white description">Camiseta Newells Old Boys Titular Temporada 2023</p>
+                                <h5 class="text-white">Precio: <span class="price">$2100</span></h5>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary button">Añadir al Carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center-mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <img src="./recursos/slorenzo.titular.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title pt-2 text-center text-white">San Lorenzo</h5>
+                                <p class="card-text text-white description">Camiseta San Lorenzo Titular Temporada 2023</p>
+                                <h5 class="text-white">Precio: <span class="price">$2700</span></h5>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary button">Añadir al Carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center-mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <img src="./recursos/racing.titular.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title pt-2 text-center text-white">Racing Club</h5>
+                                <p class="card-text text-white description">Camiseta Racing Titular Temporada 2023</p>
+                                <h5 class="text-white">Precio: <span class="price">$2900</span></h5>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary button">Añadir al Carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center-mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <img src="./recursos/independiente.titular.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title pt-2 text-center text-white">Independiente</h5>
+                                <p class="card-text text-white description">Camiseta Independiente Titular Temporada 2023</p>
+                                <h5 class="text-white">Precio: <span class="price">$2800</span></h5>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary button">Añadir al Carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr class="text-primary">
+                        <th scope="col">#</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                
+                </tbody>
+            </table>
+            <div class="row mx-4">
+                <div class="col">
+                    <h3 class="itemCarritoTotal text-white">Total:0</h3>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <button class="btn btn-success">Comprar</button>
+                </div>
+            </div>
+        </div>
+      </header>
+  </body>
+  <footer class="bg-dark p-3 mt-5">
+    <p class="text-center m-0 text-white">Tienda de Camisetas</p>
+  </footer>
+  
+  <link rel="stylesheet" href="" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</html>
