@@ -1,0 +1,74 @@
+[
+  {
+    "categoria": "Niños",
+    "talle": "2",
+    "ancho": "30cm",
+    "largo": "40cm"
+  },
+  {
+    "categoria": "Niños",
+    "talle": "4",
+    "ancho": "34cm",
+    "largo": "48cm"
+  },
+  {
+    "categoria": "Niños",
+    "talle": "6",
+    "ancho": "36cm",
+    "largo": "52cm"
+  },
+  {
+    "categoria": "Niños",
+    "talle": "8",
+    "ancho": "40cm",
+    "largo": "57cm"
+  },
+  {
+    "categoria": "Niños",
+    "talle": "10",
+    "ancho": "43cm",
+    "largo": "63cm"
+  },
+  {
+    "categoria": "Niños",
+    "talle": "12",
+    "ancho": "45cm",
+    "largo": "65cm"
+  },
+  {
+    "categoria": "Adultos",
+    "talle": "XS",
+    "ancho": "48cm",
+    "largo": "70cm"
+  },
+  {
+    "categoria": "Adultos",
+    "talle": "S",
+    "ancho": "50cm",
+    "largo": "72cm"
+  },
+  {
+    "categoria": "Adultos",
+    "talle": "M",
+    "ancho": "53cm",
+    "largo": "74cm"
+  },
+  {
+    "categoria": "Adultos",
+    "talle": "L",
+    "ancho": "56cm",
+    "largo": "76cm"
+  },
+  {
+    "categoria": "Adultos",
+    "talle": "XL",
+    "ancho": "58cm",
+    "largo": "78cm"
+  },
+  {
+    "categoria": "Adultos",
+    "talle": "XXL",
+    "ancho": "62cm",
+    "largo": "80cm"
+  }
+]

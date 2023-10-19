@@ -7,6 +7,21 @@ clickbutton.forEach(element => {
   element.addEventListener("click", (agregarAlCarrito))
 });
 function agregarAlCarrito(e) {
+
+  Toastify({
+    text: "Camiseta agregada al carrito",
+    duration: 3000,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "right", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(to left, b2b2ff, blue)",
+      borderRadius: "15px"
+    },
+    onClick: function(){} // Callback after click
+  }).showToast(); 
+
   const button = e.target
   const item = button.closest(".card")
   const itemTitle = item.querySelector(".card-title").textContent;
@@ -50,7 +65,6 @@ function actualizarCarrito() {
     const Content = `
     <th scope="row">1</th>
                     <td class="tabla__productos">
-                        <img src="${item.img}" alt="">
                         <h6 class="title">${item.descripción}</h6>
                     </td>
                     <td class="tabla__precio"><p>${item.precio}</p>
@@ -80,6 +94,22 @@ function CarritoTotal() {
 }
 //remover items de carrito con boton
 function removeItemCarrito(e) {
+
+  Toastify({
+    text: "Camiseta eliminada del carrito",
+    duration: 3000,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "right", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(to left, b2b2ff, blue)",
+      borderRadius: "15px",
+      
+    },
+    onClick: function(){} // Callback after click
+  }).showToast(); 
+
   const buttonDelete = e.target
   const tr = buttonDelete.closest(".itemCarrito")
   const descripción = tr.querySelector('.title').textContent;
@@ -116,3 +146,22 @@ window.onload = function () {
     actualizarCarrito()
   }
 }
+const guiaTalles = async () => {
+  const response = await fetch("./talles.json");
+  const talle = await response.json();
+
+  tbodyTalles= ``;
+  talle.forEach((talle,index)=>{
+    tbodyTalles+= `<tr>
+    <td>${talle.categoria}</td>
+    <td>${talle.talle}</td>
+    <td>${talle.largo}</td>
+    <td>${talle.ancho}</td>
+    </tr>`
+  })
+  ttalles.innerHTML = tbodyTalles;
+
+}
+window.addEventListener("load", function () {
+  guiaTalles();
+})
